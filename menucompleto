@@ -1,0 +1,947 @@
+int r1 = 0 ;
+int g1 = 0;
+int b1 = 0;
+int r2 = 0 ;
+int g2 = 0;
+int b2 = 0;
+int r3 = 0 ;
+int g3 = 0;
+int b3 = 0;
+int proyzx= 320;
+int proyzy= 60;
+int proyvx= 320;
+int proyvy= 160;
+int proysx= 320;
+int proysy= 280;
+int proydx= 60;
+int proydy= 320;
+int proyfx= 160;
+int proyfy= 320;
+int proygx= 90;
+int proygy= 320;
+int proyhx= 183;
+int proyhy= 320;
+int proyjx= 320;
+int proyjy= 59;
+int proykx= 320;
+int proyky= 190;
+int proylx= 231;
+int proyly= 320;
+int proymx= 320;
+int proymy= 114;
+int proynx= 68;
+int proyny= 320;
+int proywx= 320;
+int proywy= 194;
+int proyqx= 320;
+int proyqy= 200;
+int proyaax=0;
+int proyaay= 97;
+int proyox=182;
+int proyoy= 320;
+int proypx=0;
+int proypy= 70;
+int proyux=0;
+int proyuy= 154;
+int proyex=138;
+int proyey= 320;
+int proyrx=63;
+int proyry= 320;
+int proytx=0;
+int proyty= 176;
+int proyAx=120;
+int proyAy= 320;
+int proyBx=320;
+int proyBy= 120;
+int proyCx=110;
+int proyCy= 320;
+int proyDx=220;
+int proyDy= 320;
+int proyRx=320;
+int proyRy= 83;
+int proyFx=100;
+int proyFy= 320;
+int proyGx=320;
+int proyGy= 192;
+int proyHx=280;
+int proyHy= 320;
+int proyIx=320;
+int proyIy= 64;
+int proyJx=43;
+int proyJy= 320;
+int proyKx=145;
+int proyKy= 320;
+int proyLx=320;
+int proyLy= 231;
+int proyMx=79;
+int proyMy= 320;
+int proyNx=0;
+int proyNy= 116;
+int proyOx=189;
+int proyOy= 320;
+int proyPx=320;
+int proyPy= 142;
+int proyQx=0;
+int proyQy= 200;
+int proySx=98;
+int proySy= 320;
+int proyTx=160;
+int proyTy= 320;
+int proyUx=0;
+int proyUy= 132;
+int proyVx=194;
+int proyVy= 320;
+int proyWx=320;
+int proyWy= 154;
+int proyXx=164;
+int proyXy= 320;
+int proyYx=0;
+int proyYy= 203;
+int proyZx=320;
+int proyZy= 120;
+int jux = 160;
+int juy = 160;
+int puntos =0;
+
+
+
+void main (){
+  animate (menu);
+  
+}
+
+
+
+void menu(){
+  imagen_pr();
+   boton_cr();
+ 	 boton_ins();
+ 		boton_ju();
+  texto_cr();
+  texto_ins();
+  texto_ju();
+  cambiocolor_cr();
+  cambiocolor_ins();
+  cambiocolor_ju();
+   diddy ();
+  funcion_cr();
+  funcion_ins();
+  funcion_ju();
+  
+}
+   
+  
+
+
+void imagen_pr(){
+  background(255,255,255);
+  image ("https://i.namu.wiki/i/VOBS787L04ZX4C-oxJeD8L_f1mjlsoV0KlC_nrUmninQixbLLAkNF6m3Iysj29F0r83zjl9z06ACyCClYQX_5A.webp",0,0,320,320);
+}
+
+void boton_cr(){
+   fill (r1,g1,b1);
+  rect (20,20,110,30);
+  }
+
+void boton_ins(){
+  fill(r2,g2,b2);
+  rect(190,20,110,30);
+}
+
+void boton_ju(){
+  fill(r3,g3,b3);
+  rect (110,270,110,30);
+}
+
+void cambiocolor_cr (){
+  if (mouseX > 20 && mouseX < 130 && mouseY > 20 && mouseY < 50){
+  	r1 = 178;
+    g1 = 56;
+    b1 = 187;
+    
+    boton_cr();
+    
+    fill(0,0,0);
+      texto_cr();
+  }
+  else {
+    r1 =0;
+    b1 = 0;
+    g1 = 0;
+  }
+}
+
+void cambiocolor_ins (){
+  if (mouseX > 190 && mouseX < 300 && mouseY > 20 && mouseY < 50){
+  	r2 = 242;
+    g2 = 10;
+    b2 = 94;
+    
+    boton_ins();
+    
+    fill(0,0,0);
+      texto_ins();
+  }
+  else{
+    r2 = 0;
+     b2 =0;
+    g2 = 0;
+  }
+}
+
+void cambiocolor_ju (){
+  if (mouseX > 111 && mouseX < 220 && mouseY > 270 && mouseY < 300){
+  	r3 = 64;
+    g3 = 190;
+    b3 = 124;
+    
+    boton_ju();
+    
+    fill(0,0,0);
+      texto_ju();
+  }
+   else{
+    r3 = 0;
+     b3 =0;
+    g3 = 0;
+  }
+}
+
+
+void diddy (){
+println ("X: " + mouseX + "Y: " + mouseY);
+  }
+
+void texto_cr(){
+  fill(255,255,255);
+  text ("Créditos",40,42);
+}
+
+void texto_ins(){
+   fill(255,255,255);
+  textSize(13);
+  text("Instrucciones",195,42);
+}
+
+void texto_ju(){
+   fill(255,255,255);
+  text ("Jugar",145,290);
+}
+
+void cr (){
+  image ("https://ih1.redbubble.net/image.4748549236.6449/flat,750x,075,f-pad,750x1000,f8f8f8.jpg", 0, 0, 320,320);
+ 	fill(0,0,0);
+  text ("Hecho por", 120,30);
+  text ("Javier Soto Díaz", 90, 300);
+   boton_volver ();
+  funcion_boton_volver();
+  println ("X: " + mouseX + "Y: " + mouseY);
+}
+
+void ins (){
+  background(255,255,255);
+  image ("https://tr.rbxcdn.com/180DAY-a26716ff56c02022be12327a0fc526e8/420/420/Image/Png/noFilter", 0,0,320,320);
+  fill(0,0,0);
+  text ("Muévete con las flechas y sobrevive durante 60 SEGUNDOS",20,30);
+  text ("Y disfruta del juego!", 120, 280);
+  boton_volver ();
+  funcion_boton_volver();
+  println ("X: " + mouseX + "Y: " + mouseY);
+}
+
+
+void jugar(){
+  image ("https://i.pinimg.com/736x/ef/17/24/ef17243e390255a2e624b18e1a8c2af1.jpg",0,0,320,320);
+  textonombre();
+  tiempo();
+  teclas ();
+  proyectiles();
+  hitboxz();
+  hitboxq();
+  hitboxv();
+  hitboxaa();
+  hitboxp();
+  hitboxo();
+  hitboxr();
+  hitboxu();
+  hitboxt();
+  hitboxs();
+  hitboxf();
+  hitboxd();
+  hitboxg();
+  hitboxh();
+  hitboxj();
+  hitboxk();
+  hitboxl();
+  hitboxm();
+  hitboxn();
+  hitboxw();
+  hitboxe();
+  hitboxA();
+  hitboxB();
+  hitboxC();
+  hitboxD();
+  hitboxR();
+  hitboxF();
+  hitboxG();
+  hitboxH();
+  hitboxI();
+  hitboxJ();
+  hitboxK();
+ 	hitboxL();
+  hitboxM();
+  hitboxN();
+  hitboxO();
+  hitboxP(); 
+  hitboxQ();
+  hitboxS();
+  hitboxT();
+  hitboxU();
+  hitboxV();
+  hitboxW();
+  hitboxX();
+  hitboxY();   
+  hitboxZ();
+  ganar();
+  puntitos();
+  textopuntos();
+  }
+
+void teclas(){
+  
+    if (juy > 3 &&keyPressed && key == "up"){
+      juy = juy-8;
+    }
+  
+		if (jux > 3 && keyPressed && key == "left"){
+      jux = jux-8;
+    }
+  
+		if (juy < 290 &&keyPressed && key == "down"){
+      juy = juy +8;
+    }
+  
+		if (jux < 290 && keyPressed && key == "right"){
+      jux =jux + 8;
+    }
+
+	jugador();
+}
+
+
+void jugador(){
+  fill(0,0,0);
+  image ("https://preview.redd.it/fluff-make-the-comments-on-this-post-look-like-battle-cats-v0-2fyrec945rzc1.png?width=640&crop=smart&auto=webp&s=f6b7850d5eac3c5e063f0bc1657c1b704132462b",jux,juy,25,25);
+ 
+}
+
+void funcion_cr(){
+  if (mousePressed){
+    if (mouseButton == LEFTBUTTON){
+      if (mouseX > 20 ){
+        if (mouseX < 130){
+          if (mouseY > 20){
+        		if (mouseY < 50);
+      
+  					animate (cr);
+          }}}}}}
+
+void funcion_ins(){
+  if (mousePressed){
+    if (mouseButton == LEFTBUTTON){
+      if (mouseX > 190 ){
+        if (mouseX < 300){
+          if (mouseY > 20){
+        		if (mouseY < 50);
+      
+  					animate (ins);
+          }}}}}}
+
+void funcion_ju(){
+  if (mousePressed){
+    if (mouseButton == LEFTBUTTON){
+      if (mouseX > 111 ){
+        if (mouseX < 220){
+          if (mouseY > 270){
+        		if (mouseY < 300);
+  					animate (ju);
+          }}}}}}
+
+void boton_volver (){
+   fill(0,0,0);
+  rect (0,310,50,45);
+    fill(203,43,43);
+  textSize (8);
+    text ("Volver",10, 320 );
+}
+
+void funcion_boton_volver(){
+  if (mousePressed){
+    if (mouseButton == LEFTBUTTON){
+      if (mouseX > 2 ){
+        if (mouseX < 48){
+          if (mouseY > 310){
+        		if (mouseY < 320);
+            animate (menu);
+          }}}}}}
+
+void tiempo(){
+  int b = millis()/1000;
+  fill(0,0,0);
+ text("tiempo: "+ b, 230, 23 );
+  
+   
+  }
+ 
+void ganar(){
+  int b = millis()/1000;
+  if(b >= 60){
+     image ("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE4nw_ZJ6YbjsradCGTCd5t78j9J8mVUodzxLEhdGwvc4rFnKeIrKxTwUQ4xsFX3qWH7w&usqp=CAU",0,0,320,320);
+    fill(231,239,28);
+    text ("Ganaste!",220,140);
+    boton_volver();
+    funcion_boton_volver();
+  }}
+
+String nombre;
+
+void name (){
+  
+  nombre = readString("Dime tu nombre");
+	print("Hola ");
+	print(nombre);
+	println(", ¿Preparado?");
+}
+
+void textonombre(){
+  fill(0,0,0);
+	textSize(10);
+  text (nombre, 40, 20);
+}
+
+
+
+void ju(){
+  image ("https://ih1.redbubble.net/image.4564533238.0563/raf,360x360,075,t,fafafa:ca443f4786.jpg",0,0,320,320);
+    fill(255,255,255);
+    text ("Pulsa f para jugar",45,90);{
+  if (keyPressed){
+    name();
+    animate (jugar);
+  }}
+}
+
+void proyectiles(){
+  int b = millis()/1000;
+  if (b >= 3){
+  rect (proyzx,proyzy,30,30);
+    proyzx = proyzx - 6;   
+  }
+  if (b >= 4){
+  rect (proyvx,proyvy,30,30);
+    proyvx = proyvx - 6;
+  }
+  if (b >= 5){
+  rect  (proysx,proysy,30,30);
+    proysx = proysx - 6;
+  }
+  if (b >= 8){
+  rect (proydx,proydy,30,30);
+    proydy = proydy - 10;
+  }
+  if (b >= 9){
+  rect (160,proyfy,30,30);
+    proyfy = proyfy - 10;
+  }
+  if (b >= 10){
+  rect (proygx,proygy,30,30);
+    proygy = proygy - 10;
+  }
+  if (b >= 11){
+  rect (proyhx,proyhy,30,30);
+    proyhy = proyhy - 10;
+  }
+  if (b >= 11){
+  rect (proyjx,proyjy,30,30);
+    proyjx = proyjx - 7;
+  }
+  if (b >= 12){
+  rect (proykx,proyky,30,30);
+    proykx = proykx - 8;
+  }
+  if (b >= 13){
+  rect (proylx,proyly,30,30);
+   proyly = proyly - 5;
+  }
+  if (b >= 14){
+  rect (proymx,proymy,30,30);
+    proymx = proymx - 6;
+  }
+  if (b >= 14){
+  rect (proynx,proyny,30,30);
+    proyny = proyny - 11;
+  }
+  if (b >= 15){
+  rect (proywx,proywy,30,30);
+    proywx = proywx - 13;
+  }
+  if (b >= 16){
+  rect (proyqx,proyqy,30,30);
+    proyqx = proyqx - 4;
+  }
+  if (b >= 17){
+  rect (proyaax,proyaay,30,30);
+    proyaax = proyaax + 3;
+  }
+  if (b >= 19){
+  rect (proyox,proyoy,30,30);
+    proyoy = proyoy + 7;
+  }
+  if (b >= 20){
+  rect (proypx,proypy,30,30);
+    proypx = proypx + 9;
+  }
+  if (b >= 21){
+  rect (proyux,proyuy,30,30);
+    proyux = proyux + 7;
+  }
+  if (b >= 22){
+  rect (proyex,proyey,30,30);
+    proyey = proyey + 11;
+  }
+  if (b >= 23){
+  rect (proyrx,proyry,30,30);
+    proyry = proyry + 12;
+  }
+  if (b >= 24){
+  rect (proytx,proyty,30,30);
+    proytx = proytx + 9;
+  }
+  if (b >= 25){
+  rect (proyAx,proyAy,100,100);
+    proyAy = proyAy - 7;
+  }
+  if (b == 28){
+    fill(255,94,94);
+  text ("¿Preparado?",100, 30);
+      
+  }
+  if (b == 29){
+    fill(255,39,39);
+  text ("¿Preparado?",100, 30);
+  }
+  if (b == 30){
+    fill(177,0,0);
+  text ("¿Preparado?",100, 30);
+  }
+  if (b == 31){
+    fill(55,245,6);
+  text ("¡Suerte!",115, 30);
+  }
+   if (b >= 32){
+  rect (proyBx,proyBy,75,75);
+    proyBx = proyBx - 1;
+  }
+   if (b >= 33){
+  rect (proyCx,proyCy,50,50);
+    proyCy = proyCy - 8;
+  }
+   if (b >= 33){
+  rect (proyDx,proyDy,55,55);
+    proyDy = proyDy + 8;
+  }
+   if (b >= 34){
+  rect (proyRx,proyRy,35,35);
+    proyRx = proyRx - 4;
+  }
+   if (b >= 35){
+  rect (proyFx,proyFy,30,30);
+    proyFy = proyFy - 3;
+  }
+   if (b >= 35){
+  rect (proyGx,proyGy,30,30);
+    proyGx = proyGx - 9;
+  }
+   if (b >= 38){
+  rect (proyHx,proyHy,40,40);
+    proyHy = proyHy + 7;
+  }
+   if (b >= 40){
+  rect (proyIx,proyIy,25,25);
+    proyIx = proyIx - 13;
+  }
+   if (b >= 41){
+  rect (proyJx,proyJy,60,60);
+    proyJy = proyJy + 7;
+  }
+   if (b >= 42){
+  rect (proyKx,proyKy,40,40);
+    proyKy = proyKy + 9;
+  }
+   if (b >= 43){
+  rect (proyLx,proyLy,20,20);
+    proyLx = proyLx - 14;
+  }
+   if (b >= 43){
+  rect (proyMx,proyMy,50,50);
+    proyMy = proyMy - 6;
+  }
+   if (b >= 46){
+  rect (proyNx,proyNy,90,90);
+    proyNx = proyNx + 5;
+  }
+  if (b >= 48){
+  rect (proyOx,proyOy,40,40);
+    proyOy = proyOy - 9;
+  }
+  if (b >= 50){
+     fill(165,8,8);
+  rect (proyPx,proyPy,50,50);
+    proyPx = proyPx - 6;
+  }
+  if (b >= 50){
+     fill(165,8,8);
+  rect (proyQx,proyQy,60,60);
+    proyQx = proyQx + 7;
+  }
+  if (b >= 51){
+     fill(165,8,8);
+  rect (proySx,proySy,70,70);
+    proySy = proySy - 6;
+  }
+  if (b >= 51){
+     fill(165,8,8);
+  rect (proyTx,proyTy,40,40);
+    proyTy = proyTy - 8;
+  }
+  if (b >= 53){
+    fill(98,0,0);
+  rect (proyUx,proyUy,65,65);
+    proyUx = proyUx + 7;
+  }
+  if (b >= 55){
+     fill(98,0,0);
+  rect (proyVx,proyVy,70,70);
+    proyVy = proyVy + 6;
+  }
+  if (b >= 55){
+      fill(98,0,0);
+  rect (proyWx,proyWy,75,75);
+    proyWx = proyWx - 6;
+  }
+  if (b >= 57){
+   fill(98,0,0);
+  rect (proyXx,proyXy,40,40);
+    proyXy = proyXy - 9;
+  }
+  if (b >= 58){
+    fill(165,8,8);
+  rect (proyYx,proyYy,50,50);
+    proyYx = proyYx + 7;
+  }
+  if (b >= 59){
+    fill(98,0,0);
+  rect (proyZx,proyZy,30,30);
+    proyZx = proyZx - 15;
+  }
+  }
+
+void hitboxz(){
+  if (jux +15 > proyzx && jux - 15 < proyzx){
+    if (juy +20 > proyzy && juy -20 < proyzy ){             
+        animate (perder);
+    }}}
+
+void hitboxv(){
+  if (jux +15 > proyvx && jux - 15 < proyvx){
+    if (juy +20 > proyvy && juy -20 < proyvy ){             
+        animate (perder);
+    }}}
+
+void hitboxs(){
+  if (jux +15 > proysx && jux - 15 < proysx){
+    if (juy +20 > proysy && juy -20 < proysy ){             
+        animate (perder);
+    }}}
+
+void hitboxd(){
+  if (jux +15 > proydx && jux - 15 < proydx){
+    if (juy +20 > proydy && juy -20 < proydy ){             
+        animate (perder);
+    }}}
+
+void hitboxf(){
+  if (jux +15 > proyfx && jux - 15 < proyfx){
+    if (juy +20 > proyfy && juy -20 < proyfy ){             
+        animate (perder);
+    }}}
+
+void hitboxg(){
+  if (jux +15 > proygx && jux - 15 < proygx){
+    if (juy +20 > proygy && juy -20 < proygy ){             
+        animate (perder);
+    }}}
+
+void hitboxh(){
+  if (jux +15 > proyhx && jux - 15 < proyhx){
+    if (juy +20 > proyhy && juy -20 < proyhy ){             
+        animate (perder);
+    }}}
+
+void hitboxj(){
+  if (jux +15 > proyjx && jux - 15 < proyjx){
+    if (juy +20 > proyjy && juy -20 < proyjy ){             
+        animate (perder);
+    }}}
+
+void hitboxk(){
+  if (jux +15 > proykx && jux - 15 < proykx){
+    if (juy +20 > proyky && juy -20 < proyky ){             
+        animate (perder);
+    }}}
+
+void hitboxl(){
+  if (jux +15 > proylx && jux - 15 < proylx){
+    if (juy +20 > proyly && juy -20 < proyly ){             
+        animate (perder);
+    }}}
+
+void hitboxm(){
+  if (jux +15 > proymx && jux - 15 < proymx){
+    if (juy +20 > proymy && juy -20 < proymy ){             
+        animate (perder);
+    }}}
+
+void hitboxn(){
+  if (jux +15 > proynx && jux - 15 < proynx){
+    if (juy +20 > proyny && juy -20 < proyny ){             
+        animate (perder);
+    }}}
+
+void hitboxw(){
+  if (jux +15 > proywx && jux - 15 < proywx){
+    if (juy +20 > proywy && juy -20 < proywy ){             
+        animate (perder);
+    }}}
+
+void hitboxq(){
+  if (jux +15 > proyqx && jux - 15 < proyqx){
+    if (juy +20 > proyqy && juy -20 < proyqy ){             
+        animate (perder);
+    }}}
+
+void hitboxaa(){
+  if (jux +15 > proyaax && jux - 15 < proyaax){
+    if (juy +20 > proyaay && juy -20 < proyaay ){             
+        animate (perder);
+    }}}
+
+void hitboxo(){
+  if (jux +15 > proyox && jux - 15 < proyox){
+    if (juy +20 > proyoy && juy -20 < proyoy ){             
+        animate (perder);
+    }}}
+
+void hitboxp(){
+  if (jux +15 > proypx && jux - 15 < proypx){
+    if (juy +20 > proypy && juy -20 < proypy ){             
+        animate (perder);
+    }}}
+
+void hitboxu(){
+  if (jux +15 > proyux && jux - 15 < proyux){
+    if (juy +20 > proyuy && juy -20 < proyuy ){             
+        animate (perder);
+    }}}
+
+void hitboxe(){
+  if (jux +15 > proyex && jux - 15 < proyex){
+    if (juy +20 > proyey && juy -20 < proyey ){             
+        animate (perder);
+    }}}
+
+void hitboxr(){
+  if (jux +15 > proyrx && jux - 15 < proyrx){
+    if (juy +20 > proyry && juy -20 < proyry ){             
+        animate (perder);
+    }}}
+
+void hitboxt(){
+  if (jux +15 > proytx && jux - 15 < proytx){
+    if (juy +20 > proyty && juy -20 < proyty ){             
+        animate (perder);
+    }}}
+
+void hitboxA(){
+  if (jux +50 > proyAx && jux - 50 < proyAx){
+    if (juy +65 > proyAy && juy -65 < proyAy ){             
+        animate (perder);
+    }}}
+
+void hitboxB(){
+  if (jux +37 > proyBx && jux - 37 < proyBx){
+    if (juy +46 > proyBy && juy -46 < proyBy ){             
+        animate (perder);
+    }}}
+
+void hitboxC(){
+  if (jux +22 > proyCx && jux - 22 < proyCx){
+    if (juy +37 > proyCy && juy -37 < proyCy ){             
+        animate (perder);
+    }}}
+
+void hitboxD(){
+  if (jux +24 > proyDx && jux - 24 < proyDx){
+    if (juy +39 > proyDy && juy -39 < proyDy ){             
+        animate (perder);
+    }}}
+
+void hitboxR(){
+  if (jux +18 > proyRx && jux - 18 < proyRx){
+    if (juy +23 > proyRy && juy -23 < proyRy ){             
+        animate (perder);
+    }}}
+
+void hitboxF(){
+  if (jux +15 > proyFx && jux - 15 < proyFx){
+    if (juy +20 > proyFy && juy -20 < proyFy ){             
+        animate (perder);
+    }}}
+
+void hitboxG(){
+  if (jux +15 > proyGx && jux - 15 < proyGx){
+    if (juy +20 > proyGy && juy -20 < proyGy ){             
+        animate (perder);
+    }}}
+
+void hitboxH(){
+  if (jux +20 > proyHx && jux - 20 < proyHx){
+    if (juy +26 > proyHy && juy -26 < proyHy ){             
+        animate (perder);
+    }}}
+
+void hitboxI(){
+  if (jux +12 > proyIx && jux - 12 < proyIx){
+    if (juy +17 > proyIy && juy -17 < proyIy ){             
+        animate (perder);
+    }}}
+
+void hitboxJ(){
+  if (jux +30 > proyJx && jux - 30 < proyJx){
+    if (juy +40 > proyJy && juy -40 < proyJy ){             
+        animate (perder);
+    }}}
+
+void hitboxK(){
+  if (jux +20 > proyKx && jux - 20 < proyKx){
+    if (juy +26 > proyKy && juy -26 < proyKy ){             
+        animate (perder);
+    }}}
+
+void hitboxL(){
+  if (jux +10 > proyLx && jux - 10 < proyLx){
+    if (juy +15 > proyLy && juy -15 < proyLy ){             
+        animate (perder);
+    }}}
+
+void hitboxM(){
+  if (jux +22 > proyMx && jux - 22 < proyMx){
+    if (juy +37 > proyMy && juy -37 < proyMy ){             
+        animate (perder);
+    }}}
+
+void hitboxN(){
+  if (jux +45 > proyNx && jux - 45 < proyNx){
+    if (juy +60 > proyNy && juy -60 < proyNy ){             
+        animate (perder);
+    }}}
+
+void hitboxO(){
+  if (jux +20 > proyOx && jux - 20 < proyOx){
+    if (juy +26 > proyOy && juy -26 < proyOy ){             
+        animate (perder);
+    }}}
+
+void hitboxP(){
+  if (jux +22 > proyPx && jux - 22 < proyPx){
+    if (juy +34 > proyPy && juy -34 < proyPy ){             
+        animate (perder);
+    }}}
+
+void hitboxQ(){
+  if (jux +30 > proyQx && jux - 30 < proyQx){
+    if (juy +38 > proyQy && juy -38 < proyQy ){             
+        animate (perder);
+    }}}
+
+void hitboxS(){
+  if (jux +34 > proySx && jux - 34 < proySx){
+    if (juy +42 > proySy && juy -42 < proySy ){             
+        animate (perder);
+    }}}
+
+void hitboxT(){
+  if (jux +20 > proyTx && jux - 20 < proyTx){
+    if (juy +26 > proyTy && juy -26 < proyTy ){             
+        animate (perder);
+    }}}
+
+void hitboxU(){
+  if (jux +33 > proyUx && jux - 33 < proyUx){
+    if (juy +40 > proyUy && juy -40 < proyUy ){             
+        animate (perder);
+    }}}
+
+void hitboxV(){
+  if (jux +34 > proyVx && jux - 34 < proyVx){
+    if (juy +42 > proyVy && juy -42 < proyVy ){             
+        animate (perder);
+    }}}
+
+void hitboxW(){
+  if (jux +37 > proyWx && jux - 37 < proyWx){
+    if (juy +46 > proyWy && juy -46 < proyWy ){             
+        animate (perder);
+    }}}
+
+void hitboxX(){
+  if (jux +20 > proyXx && jux - 20 < proyXx){
+    if (juy +26 > proyXy && juy -26 < proyXy ){             
+        animate (perder);
+    }}}
+
+void hitboxY(){
+  if (jux +22 > proyYx && jux - 22 < proyYx){
+    if (juy +34 > proyYy && juy -34 < proyYy ){             
+        animate (perder);
+    }}}
+
+void hitboxZ(){
+  if (jux +15 > proyZx && jux - 15 < proyZx){
+    if (juy +20 > proyZy && juy -20 < proyZy ){             
+        animate (perder);
+    }}}
+
+void puntitos (){
+  int b = millis()/1000;
+    if (b <= 60 ){
+      puntos = puntos + random(2);}
+  
+}
+
+int r4=0;
+int g4=0;
+int b4=0;
+
+
+void perder (){
+  image ("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS248mX0v4FNTFBlt4sDNxpLFGsEACtTy7VsQ&s",0,0,320,320);
+  fill(0,0,0);
+  textSize (18);
+  text ("Perdiste",10,30);
+}
+
+
+void textopuntos(){
+  text("puntos: " + puntos,15, 310);
+}
